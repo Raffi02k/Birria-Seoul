@@ -15,9 +15,18 @@ const links = [
 export function SiteHeader() {
   const { pathname } = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const closeMenu = () => setIsMenuOpen(false);
+  // Mjuk stängning med fördröjning för animationen
+  const closeMenu = () => {
+    if (!isMenuOpen || isClosing) return;
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsMenuOpen(false);
+      setIsClosing(false);
+    }, 280); // Matchar 0.3s i CSS
+  };
 
   const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
     closeMenu();
@@ -49,7 +58,7 @@ export function SiteHeader() {
     const previousOverflow = document.body.style.overflow;
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setIsMenuOpen(false);
+        closeMenu();
       }
     };
 
@@ -105,24 +114,24 @@ export function SiteHeader() {
       </button>
 
       {isMenuOpen ? (
-        <div className="mobile-sheet-root" role="dialog" aria-modal="true">
+        <div className={`mobile-sheet-root ${isClosing ? "is-closing" : ""}`} role="dialog" aria-modal="true">
           <button
             type="button"
             className="mobile-sheet-backdrop"
             aria-label="Stäng meny"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={closeMenu}
           />
           <div className="mobile-sheet">
             <button
               type="button"
               className="mobile-close"
               aria-label="Stäng meny"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={closeMenu}
             >
               <X size={20} />
             </button>
             <div className="mobile-wordmark">
-              <AppLink href="/">
+              <AppLink href="/" onClick={closeMenu}>
                 <img
                   src="/images/Loggo.png"
                   alt="Birria Seoul"
