@@ -55,7 +55,7 @@ export default function HomePage() {
       </section>
       <div className="ticker" aria-label="Birria Seoul signaturer">
         <div className="ticker-track">
-          {[0, 1].map((copy) => (
+          {[0, 1, 2, 3].map((copy) => (
             <span key={copy}>BIRRIA TACOS ✦ CONSOMMÉ ✦ SEOUL HEAT ✦ HALAL BEEF ✦ STICKY FINGERS ✦ </span>
           ))}
         </div>
