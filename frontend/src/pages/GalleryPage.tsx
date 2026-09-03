@@ -10,11 +10,11 @@ export default function GalleryPage() {
       <section className="gallery-heading section-pad">
         <p className="section-kicker">NO FILTER NEEDED</p>
         <h1>
-          Eat with<br />
-          <span>your eyes.</span>
+          Birria tacos.<br />
+          <span>Sticky fingers.</span>
         </h1>
         <div>
-          <p>Crunch, steam, drip - ett galleri byggt för cravings.</p>
+          <p>Crunch, steam, drip - birria tacos, consommé och Seoul heat i varje ruta.</p>
           <a className="text-link" href="https://www.instagram.com/birriaseoul/" target="_blank" rel="noreferrer">
             <Camera size={18} /> Följ @birriaseoul <ArrowUpRight size={18} />
           </a>

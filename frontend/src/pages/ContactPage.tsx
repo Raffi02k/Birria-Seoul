@@ -14,11 +14,11 @@ export default function ContactPage() {
           <div className="story-hero-copy">
             <p className="section-kicker">STAMPGATAN 48 · ULLEVI NORRA</p>
             <h1>
-              Hitta hit.<br />
-              <span>Ät direkt.</span>
+              Foodora eller drop-in.<br />
+              <span>Seoul heat direkt.</span>
             </h1>
             <p>
-              Drop-in, take-away eller hemleverans. När cravings slår till ska det vara lätt att beställa.
+              Drop-in, take-away eller hemleverans. När cravings slår till ska det vara lätt att beställa birria tacos, consommé och halal beef.
             </p>
             <div className="hero-actions">
               <a className="button button-hot" href="https://maps.google.com/?q=Stampgatan+48+Göteborg" target="_blank" rel="noreferrer">
@@ -53,7 +53,7 @@ export default function ContactPage() {
         <div className="contact-primary">
           <div className="contact-card">
             <p className="section-kicker">ADRESS</p>
-            <h2>Birria Seoul</h2>
+            <h2>Birria Seoul, Göteborg</h2>
             <p className="contact-address">
               <MapPin size={20} /> Stampgatan 48<br />411 01 Göteborg
             </p>
@@ -97,8 +97,8 @@ export default function ContactPage() {
         <div className="contact-secondary">
           <div className="contact-card delivery-card">
             <p className="section-kicker">BESTÄLL</p>
-            <h3>Leverans eller pick-up?</h3>
-            <p>Välj din favoritapp och låt dippen börja.</p>
+            <h3>Foodora, Wolt eller pick-up?</h3>
+            <p>Välj din favoritapp och låt dippen börja med birria tacos och consommé.</p>
             <div className="delivery-links">
               <a href="https://www.foodora.se/restaurant/ui2b/birria-seoul" target="_blank" rel="noreferrer">
                 <ShoppingBag size={18} /> Foodora <ArrowUpRight size={16} />

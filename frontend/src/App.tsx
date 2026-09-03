@@ -31,36 +31,36 @@ function getRoute(pathname: string): Route {
   switch (pathname) {
     case "/":
       return {
-        title: "Birria Seoul New Gen",
+        title: "Birria Seoul | Birria Tacos, Consommé & Seoul Heat",
         description:
-          "Koreansk × mexikansk street food på Stampgatan 48 i Göteborg. Birria tacos, consommé och Seoul heat.",
+          "Koreansk × mexikansk street food på Stampgatan 48 i Göteborg med birria tacos, consommé, halal beef, sticky fingers och beställning via Foodora.",
         element: <HomePage />,
       };
     case "/meny":
       return {
-        title: "Meny | Birria Seoul",
+        title: "Meny | Birria Tacos, Consommé & Halal Beef | Birria Seoul",
         description:
-          "Se Birria Seouls meny med birria tacos, consommé, drinks och Seoul heat i Göteborg.",
+          "Se vår meny med birria tacos, tacos med consommé, halal beef, drinks och Seoul heat. Beställ Birria Seoul via Foodora i Göteborg.",
         element: <MenuPage />,
       };
     case "/om-oss":
       return {
-        title: "Om oss | Birria Seoul",
+        title: "Om Birria Seoul | Seoul Heat, Sticky Fingers & Halal Beef",
         description:
-          "Lär känna Birria Seoul: koreansk-mexikansk streetfood i Göteborg med birria, kimchi och storstadspuls.",
+          "Lär känna Birria Seoul i Göteborg: birria tacos, consommé, Seoul heat, sticky fingers och halal beef i koreansk-mexikansk streetfood.",
         element: <AboutPage />,
       };
     case "/galleri":
       return {
-        title: "Galleri | Birria Seoul",
-        description: "Se maten, grillen och känslan hos Birria Seoul i Göteborg.",
+        title: "Galleri | Birria Tacos & Sticky Fingers | Birria Seoul",
+        description: "Se birria tacos, consommé, Seoul heat och sticky fingers från Birria Seoul i Göteborg.",
         element: <GalleryPage />,
       };
     case "/kontakt":
       return {
-        title: "Kontakt | Birria Seoul",
+        title: "Kontakt | Foodora, Halal Beef & Birria Tacos | Birria Seoul",
         description:
-          "Hitta Birria Seoul på Stampgatan 48 i Göteborg. Se öppettider, leverans och beställningslänkar.",
+          "Hitta Birria Seoul på Stampgatan 48 i Göteborg. Se öppettider, Foodora, halal beef och hur du beställer birria tacos med consommé.",
         element: <ContactPage />,
       };
     default:

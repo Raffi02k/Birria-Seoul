@@ -23,14 +23,14 @@ export default function HomePage() {
             <Flame size={16} /> 15H slow cooked · Göteborg
           </p>
           <h1>
-            Dip.<br />
-            <span>Crunch.</span>
+            Birria tacos.<br />
+            <span>Seoul heat.</span>
             <br />
             Repeat.
           </h1>
           <p className="hero-lead">
-            Seoul heat möter mexikansk soul. Krispiga tacos, långkokt birria och consommé
-            som kräver en extra servett.
+            Seoul heat möter mexikansk soul. Krispiga birria tacos, långkokt halal beef och
+            consommé som går rakt mot sticky fingers.
           </p>
           <div className="hero-actions">
             <a
@@ -64,7 +64,7 @@ export default function HomePage() {
         <p className="section-kicker">01 / THE OBSESSION</p>
         <div className="intro-grid">
           <h2>
-            Inte bara tacos.<br />
+            Inte bara birria tacos.<br />
             <em>En hel ritual.</em>
           </h2>
           <div className="intro-copy">
@@ -84,7 +84,7 @@ export default function HomePage() {
             <p className="section-kicker">02 / THE MAIN CHARACTERS</p>
             <h2>
               Pick your<br />
-              <span>fighter.</span>
+              <span>birria tacos.</span>
             </h2>
           </div>
           <p>Tre personligheter. Samma långkokta hjärta.</p>
@@ -126,7 +126,7 @@ export default function HomePage() {
         <div className="experience-copy">
           <p className="section-kicker">03 / SEOUL AFTER DARK</p>
           <h2>
-            Hot food.<br />Cold city.
+            Sticky fingers.<br />Cold city.
           </h2>
           <p>
             Mitt emot Ullevi på Stampgatan. Kom hungrig, lämna med consommé på

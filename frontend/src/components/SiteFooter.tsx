@@ -7,7 +7,7 @@ export function SiteFooter() {
       <div className="footer-brand">
         <span>BIRRIA</span>
         <strong>SEOUL</strong>
-        <small>Sticky fingers. No apologies.</small>
+        <small>Sticky fingers. Seoul heat.</small>
       </div>
 
       <div className="footer-column">

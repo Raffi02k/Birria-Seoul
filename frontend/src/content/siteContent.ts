@@ -2,9 +2,9 @@ export const menuItems = [
   {
     name: "Birria Seoul OG",
     price: "150 kr",
-    short: "The original · longkokt birria · chili mayo",
+    short: "The original · halal beef · chili mayo",
     description:
-      "Restaurangens flaggskepp med majstortilla, smält ost, långkokt birria-nötkött, lök, koriander och husets chilimajonnäs. Serveras med consommé för den obligatoriska dippen.",
+      "Restaurangens flaggskepp med majstortilla, smält ost, långkokt halal beef birria, lök, koriander och husets chilimajonnäs. Serveras med consommé för den obligatoriska dippen.",
     image: "/images/Birria Seoul OG.PNG",
     heat: "Iconic",
   },
@@ -13,7 +13,7 @@ export const menuItems = [
     price: "165 kr",
     short: "Kimchi · oaxaca-style cheese · crunch",
     description:
-      "Krispigt stekta tacos fyllda med långkokt biff, krämig ost och koreansk kimchi som skär igenom med syra, hetta och umami. Serveras alltid med rykande consommé.",
+      "Krispigt stekta birria tacos fyllda med långkokt halal beef, krämig ost och koreansk kimchi som skär igenom med syra, hetta och umami. Serveras alltid med rykande consommé.",
     image: "/images/hero-birria.png",
     heat: "Hot",
   },
@@ -22,7 +22,7 @@ export const menuItems = [
     price: "150 kr",
     short: "Slaw · chimichurri · frisk hetta",
     description:
-      "En fräschare favorit toppad med krispig Gangnam slaw, koriander och chimichurri. Här möts långkokt birria, gröna örter och streetfood-kick i samma tugga.",
+      "En fräschare favorit toppad med krispig Gangnam slaw, koriander och chimichurri. Här möts långkokt halal beef birria, gröna örter och streetfood-kick i samma tugga.",
     image: "/images/Ganganam.PNG",
     heat: "Medium",
   },

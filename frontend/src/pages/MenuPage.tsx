@@ -11,10 +11,10 @@ export default function MenuPage() {
         <div>
           <p className="section-kicker">THE LINEUP</p>
           <h1>
-            Choose your<br />
-            <span>crunch.</span>
+            Birria tacos.<br />
+            <span>Choose your crunch.</span>
           </h1>
-          <p>Alla tacos serveras med rykande consommé. Här börjar ritualen med första dippen.</p>
+          <p>Alla birria tacos serveras med rykande consommé. Här börjar ritualen med första dippen.</p>
         </div>
         <div className="page-hero-art">
           <img className="fill-image" src="/images/menu-birria.png" alt="Birria Seoul tacos med consommé" />
@@ -42,7 +42,7 @@ export default function MenuPage() {
       <section className="drinks section-pad">
         <div className="drinks-copy">
           <p className="section-kicker">COOL DOWN</p>
-          <h2>Drinks.</h2>
+          <h2>Halal beef. Seoul heat.</h2>
           <p>Kalla favoriter som balanserar hetta, crunch och varje sista droppe consommé.</p>
           <img className="drinks-gif" src="/images/Drinkup.gif" alt="Drink up" />
         </div>
@@ -66,14 +66,14 @@ export default function MenuPage() {
       <section className="menu-notes section-pad">
         <div className="menu-notes-card">
           <p className="section-kicker">BRA ATT VETA</p>
-          <h2>Det ska vara kladdigt.</h2>
+          <h2>Sticky fingers är en del av planen.</h2>
           <p className="menu-notes-lead">
             Birria Seoul smakar som bäst när du går all in: varm consommé, krispiga tacos och noll rädsla för spill.
           </p>
           <div className="menu-notes-grid">
             <article>
               <h3>Consommé ingår</h3>
-              <p>Alla tacos serveras med den mustiga buljongen från långkoket. Doppa varje tugga och känn hur allt vaknar till liv.</p>
+              <p>Alla birria tacos serveras med den mustiga buljongen från långkoket. Doppa varje tugga och känn hur allt vaknar till liv.</p>
             </article>
             <article>
               <h3>Plasthandskar finns</h3>
