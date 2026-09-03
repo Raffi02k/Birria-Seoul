@@ -1052,6 +1052,27 @@ img {
   color: #b5b2a8;
 }
 
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #8a887f;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-credit:hover {
+  color: var(--paper);
+  transform: translateY(-1px);
+}
+
+.footer-credit img {
+  display: block;
+  width: auto;
+  height: 48px;
+  object-fit: contain;
+}
+
 /* ==========================================================================
    MEDIA QUERIES (Surfplatta & Mobil)
    ========================================================================== */
@@ -1085,6 +1106,14 @@ img {
     align-items: flex-start;
     margin-top: 16px;
     padding-top: 16px;
+  }
+
+  .footer-credit {
+    gap: 8px;
+  }
+
+  .footer-credit img {
+    height: 36px;
   }
 }
 
