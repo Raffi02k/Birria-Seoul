@@ -23,8 +23,8 @@ export default function HomePage() {
             <Flame size={16} /> 15H slow cooked · Göteborg
           </p>
           <h1>
-            Birria tacos.<br />
-            <span>Seoul heat.</span>
+            <span>Birria</span> tacos.<br />
+            <span>Seoul heat</span>
             <br />
             Repeat.
           </h1>
@@ -64,8 +64,8 @@ export default function HomePage() {
         <p className="section-kicker">01 / THE OBSESSION</p>
         <div className="intro-grid">
           <h2>
-            Inte bara birria tacos.<br />
-            <em>En hel ritual.</em>
+            Inte bara birria tacos<br />
+            <em>En hel ritual</em>
           </h2>
           <div className="intro-copy">
             <p>
@@ -84,7 +84,7 @@ export default function HomePage() {
             <p className="section-kicker">02 / THE MAIN CHARACTERS</p>
             <h2>
               Pick your<br />
-              <span>birria tacos.</span>
+              <span>birria tacos</span>
             </h2>
           </div>
           <p>Tre personligheter. Samma långkokta hjärta.</p>
@@ -194,7 +194,7 @@ export default function HomePage() {
         <p>Hungry yet?</p>
         <h2>
           Make it<br />
-          <span>messy.</span>
+          <span>messy</span>
         </h2>
         <div className="hero-actions">
           <a

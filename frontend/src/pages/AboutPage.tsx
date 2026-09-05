@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="story-hero-content section-pad">
           <div className="story-hero-copy">
             <p className="section-kicker">KOREAN x MEXICAN STREETFOOD</p>
-            <h1>Birria Seoul. <span>Seoul heat.</span></h1>
+            <h1>Birria Seoul <span>Seoul heat</span></h1>
             <p>
               Långkokt birria, smält ost, kimchi, consommé och halal beef. Kort sagt: streetfood byggd för cravings och sticky fingers.
             </p>

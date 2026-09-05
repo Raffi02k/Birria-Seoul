@@ -12,7 +12,7 @@ export default function MenuPage() {
           <p className="section-kicker">THE LINEUP</p>
           <h1>
             Birria tacos.<br />
-            <span>Choose your crunch.</span>
+            <span>Choose your crunch</span>
           </h1>
           <p>Alla birria tacos serveras med rykande consommé. Här börjar ritualen med första dippen.</p>
         </div>
@@ -42,8 +42,8 @@ export default function MenuPage() {
       <section className="drinks section-pad">
         <div className="drinks-copy">
           <p className="section-kicker">COOL DOWN</p>
-          <h2>Halal beef. Seoul heat.</h2>
-          <p>Kalla favoriter som balanserar hetta, crunch och varje sista droppe consommé.</p>
+          <h2>Halal beef. Seoul heat</h2>
+          <p>Kalla favoriter som balanserar hetta, crunch och varje sista droppe consommé</p>
           <img className="drinks-gif" src="/images/Drinkup.gif" alt="Drink up" />
         </div>
         <div className="drink-list">
