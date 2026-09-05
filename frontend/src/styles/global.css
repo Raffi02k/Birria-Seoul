@@ -947,7 +947,7 @@ img {
   width: max-content;
   font: 900 50px/.72 Impact, "Arial Black", sans-serif;
   letter-spacing: -.04em;
-  cursor: default;
+  cursor: pointer;
 }
 
 .footer-brand span {

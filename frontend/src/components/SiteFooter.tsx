@@ -1,14 +1,27 @@
 import { ArrowUpRight, Camera, MapPin } from "lucide-react";
 import AppLink from "./AppLink";
+import { useRouter } from "../router";
 
 export function SiteFooter() {
+  const { pathname } = useRouter();
+
   return (
     <footer className="site-footer">
-      <div className="footer-brand">
+      <AppLink
+        href="/"
+        className="footer-brand"
+        ariaLabel="Birria Seoul startsida"
+        onClick={(event) => {
+          if (pathname === "/" && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }
+        }}
+      >
         <span>BIRRIA</span>
         <strong>SEOUL</strong>
         <small>Sticky fingers. Seoul heat.</small>
-      </div>
+      </AppLink>
 
       <div className="footer-column">
         <p>Utforska</p>
