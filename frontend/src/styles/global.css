@@ -2017,32 +2017,62 @@ img {
 
 .not-found-page {
   min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   place-items: center;
   padding: 40px 20px;
-  background: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(9, 9, 9, .76), rgba(9, 9, 9, .94)),
+    url('/images/hero-birria.png') center / cover no-repeat,
+    var(--ink);
   color: var(--paper);
 }
 
 .not-found-card {
-  max-width: 620px;
-  text-align: center;
+  width: min(100%, 720px);
+  padding: 40px;
+  border: 1px solid rgba(240, 68, 34, .35);
+  background: rgba(9, 9, 9, .92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .35);
+}
+
+.not-found-card .section-kicker {
+  color: var(--acid);
 }
 
 .not-found-card h1 {
-  font-size: clamp(52px, 9vw, 110px);
+  font-size: clamp(48px, 10vw, 88px);
+  line-height: .95;
   text-shadow: none;
 }
 
 .not-found-card p:not(.section-kicker) {
-  margin: 18px auto 0;
-  max-width: 460px;
+  margin: 18px 0 0;
   color: #c8c3b6;
   line-height: 1.6;
 }
 
-.not-found-card .button {
-  margin-top: 30px;
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.not-found-actions .button:focus-visible {
+  outline: 2px solid var(--acid);
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .not-found-card {
+    padding: 28px 22px;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+  }
 }
 
 @keyframes heroZoom {
