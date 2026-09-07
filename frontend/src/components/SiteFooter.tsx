@@ -58,7 +58,7 @@ export function SiteFooter() {
         <span>© 2026 Birria Seoul</span>
         <a
           className="footer-credit"
-          href="https://mediamagnet-three.vercel.app"
+          href="https://www.mediamagnet.se"
           target="_blank"
           rel="noreferrer"
           aria-label="Byggd av MediaMagnet"
