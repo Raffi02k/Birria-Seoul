@@ -186,6 +186,10 @@ img {
   box-shadow: 0 12px 24px rgba(0, 0, 0, .2);
 }
 
+.mobile-trigger:active {
+  transform: scale(0.92);
+}
+
 /* ==========================================================================
    MOBILMENY (Solid täckning + Mjuk slide-in & slide-out)
    ========================================================================== */
@@ -205,7 +209,7 @@ img {
   width: 100vw;
   height: 100vh;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  animation: backdropFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* Menypanelen */
@@ -225,21 +229,22 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+  will-change: transform;
 
   /* Slide-in som standard */
-  animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: slideInRight 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* När menyn håller på att stängas */
 .mobile-sheet-root.is-closing .mobile-sheet {
-  animation: slideOutRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: slideOutRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .mobile-sheet-root.is-closing .mobile-sheet-backdrop {
-  opacity: 0;
+  animation: backdropFadeOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-/* Stäng-knapp (X) - Mjuk hover in och ut */
+/* Stäng-knapp (X) - Mjuk in, ut och hover */
 .mobile-close {
   position: absolute;
   top: 24px;
@@ -250,7 +255,8 @@ img {
   cursor: pointer;
   padding: 8px;
   z-index: 3;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+  animation: rotateInClose 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
 }
 
 .mobile-close:hover {
@@ -259,7 +265,11 @@ img {
 }
 
 .mobile-close:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
+}
+
+.mobile-sheet-root.is-closing .mobile-close {
+  animation: rotateOutClose 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .mobile-wordmark {
@@ -267,6 +277,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: mobileItemIn 0.35s 0.05s cubic-bezier(0.16, 1, 0.3, 1) backwards;
 }
 
 .mobile-wordmark img {
@@ -294,6 +305,26 @@ img {
   text-decoration: none;
   background-color: #131313;
   transition: color 0.2s ease, transform 0.2s ease;
+  animation: mobileItemIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.mobile-nav a:nth-child(1) { animation-delay: 0.08s; }
+.mobile-nav a:nth-child(2) { animation-delay: 0.12s; }
+.mobile-nav a:nth-child(3) { animation-delay: 0.16s; }
+.mobile-nav a:nth-child(4) { animation-delay: 0.20s; }
+.mobile-nav a:nth-child(5) { animation-delay: 0.24s; }
+
+.mobile-sheet .button-hot {
+  animation: mobileItemIn 0.35s 0.26s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+/* Vid stängning: tona ut innehåll snabbt och rent */
+.mobile-sheet-root.is-closing .mobile-wordmark,
+.mobile-sheet-root.is-closing .mobile-nav a,
+.mobile-sheet-root.is-closing .button-hot {
+  opacity: 0;
+  transform: translate3d(15px, 0, 0);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .mobile-nav a:hover {
@@ -309,21 +340,77 @@ img {
 /* Animationer */
 @keyframes slideInRight {
   from {
-    transform: translateX(100%);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideOutRight {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translateX(100%);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes backdropFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backdropFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateInClose {
+  from {
+    transform: rotate(-90deg) scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateOutClose {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate(90deg) scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes mobileItemIn {
+  from {
+    opacity: 0;
+    transform: translate3d(24px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 

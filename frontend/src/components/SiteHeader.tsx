@@ -25,7 +25,7 @@ export function SiteHeader() {
     setTimeout(() => {
       setIsMenuOpen(false);
       setIsClosing(false);
-    }, 280); // Matchar 0.3s i CSS
+    }, 300); // Matchar 0.3s i CSS
   };
 
   const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
