@@ -9,14 +9,15 @@ export default defineConfig({
   root: __dirname,
   plugins: [react()],
   server: {
-    host: "0.0.0.0",
-    allowedHosts: ["terminal.local"],
+    port: 5173,
+    strictPort: false,
     ...(isCodexSeatbeltSandbox
-      ? { watch: { useFsEvents: false, usePolling: true } }
+      ? {
+          host: "0.0.0.0",
+          allowedHosts: ["terminal.local"],
+          watch: { useFsEvents: false, usePolling: true },
+        }
       : {}),
-  },
-  preview: {
-    host: "0.0.0.0",
   },
   build: {
     outDir: resolve(projectRoot, "dist"),
