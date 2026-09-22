@@ -17,9 +17,9 @@ export default function MenuPage() {
           <p>Alla birria tacos serveras med rykande consommé. Här börjar ritualen med första dippen.</p>
         </div>
         <div className="page-hero-art">
-          <img className="fill-image" src="/images/menu-birria.png" alt="Birria Seoul tacos med consommé" />
+          <img className="fill-image" src="/images/menu-birria.webp" alt="Birria Seoul tacos med consommé" />
           <div className="round-stamp">
-            <img src="/images/small_logo.PNG" alt="Birria Seoul logo" />
+            <img src="/images/small_logo.webp" alt="Birria Seoul logo" />
           </div>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function MenuPage() {
           <p className="section-kicker">COOL DOWN</p>
           <h2>Halal beef. Seoul heat</h2>
           <p>Kalla favoriter som balanserar hetta, crunch och varje sista droppe consommé</p>
-          <img className="drinks-gif" src="/images/Drinkup.gif" alt="Drink up" />
+          <img className="drinks-gif" src="/images/drinkup.webp" alt="Drink up" />
         </div>
         <div className="drink-list">
           {drinks.map((drink) => (

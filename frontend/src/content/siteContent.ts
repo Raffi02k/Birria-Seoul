@@ -5,7 +5,7 @@ export const menuItems = [
     short: "The original · halal beef · chili mayo",
     description:
       "Restaurangens flaggskepp med majstortilla, smält ost, långkokt halal beef birria, lök, koriander och husets chilimajonnäs. Serveras med consommé för den obligatoriska dippen.",
-    image: "/images/Birria Seoul OG.PNG",
+    image: "/images/birria-seoul-og.webp",
     heat: "Iconic",
   },
   {
@@ -14,7 +14,7 @@ export const menuItems = [
     short: "Kimchi · oaxaca-style cheese · crunch",
     description:
       "Krispigt stekta birria tacos fyllda med långkokt halal beef, krämig ost och koreansk kimchi som skär igenom med syra, hetta och umami. Serveras alltid med rykande consommé.",
-    image: "/images/hero-birria.png",
+    image: "/images/hero-birria.webp",
     heat: "Hot",
   },
   {
@@ -23,7 +23,7 @@ export const menuItems = [
     short: "Slaw · chimichurri · frisk hetta",
     description:
       "En fräschare favorit toppad med krispig Gangnam slaw, koriander och chimichurri. Här möts långkokt halal beef birria, gröna örter och streetfood-kick i samma tugga.",
-    image: "/images/Ganganam.PNG",
+    image: "/images/ganganam.webp",
     heat: "Medium",
   },
   {
@@ -32,7 +32,7 @@ export const menuItems = [
     short: "Nudlar · chili-adobo buljong · ägg",
     description:
       "Heta vetenudlar i smakrik chili-adobobuljong med birria-kött, salladslök och ägg. En djup, slurp-vänlig crossover mellan mexikanskt långkok och koreansk comfort heat.",
-    image: "/images/griddle-birria.png",
+    image: "/images/griddle-birria.webp",
     heat: "Brothy",
   },
 ];
@@ -41,31 +41,31 @@ export const drinks = [
   {
     name: "Pepsi",
     price: "25 kr",
-    image: "/images/pepsi.png",
+    image: "/images/pepsi.webp",
     note: "Klassisk cola till dippen.",
   },
   {
     name: "Pepsi Max",
     price: "25 kr",
-    image: "/images/pepsimax.png",
+    image: "/images/pepsimax.webp",
     note: "Max smak, iskall finish.",
   },
   {
     name: "Zingo",
     price: "25 kr",
-    image: "/images/zingo.png",
+    image: "/images/zingo.webp",
     note: "Apelsin som lyfter hettan.",
   },
   {
     name: "Coca-Cola",
     price: "25 kr",
-    image: "/images/cocacola.png",
+    image: "/images/cocacola.webp",
     note: "Mjuk sötma till crunch.",
   },
   {
     name: "Fanta",
     price: "25 kr",
-    image: "/images/fanta.png",
+    image: "/images/fanta.webp",
     note: "Fruktig och somrig bredvid birria.",
   },
 ];
@@ -79,32 +79,32 @@ export const reviews = [
 
 export const galleryImages = [
   {
-    src: "/images/hero-birria.png",
+    src: "/images/hero-birria.webp",
     alt: "Birria taco som doppas i consommé",
     className: "gallery-tall",
   },
   {
-    src: "/images/menu-birria.png",
+    src: "/images/menu-birria.webp",
     alt: "Birria tacos serverade med lime och consommé",
     className: "gallery-wide",
   },
   {
-    src: "/images/griddle-birria.png",
+    src: "/images/griddle-birria.webp",
     alt: "Tacos på det heta stekbordet",
     className: "gallery-square",
   },
   {
-    src: "/images/menu-birria.png",
+    src: "/images/menu-birria.webp",
     alt: "Krispig taco med färska toppings",
     className: "gallery-square crop-alt",
   },
   {
-    src: "/images/griddle-birria.png",
+    src: "/images/griddle-birria.webp",
     alt: "Smält ost och birria på grillen",
     className: "gallery-wide crop-alt",
   },
   {
-    src: "/images/hero-birria.png",
+    src: "/images/hero-birria.webp",
     alt: "Rykande consommé och birria taco",
     className: "gallery-tall crop-alt",
   },

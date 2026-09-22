@@ -8,7 +8,7 @@ export default function AboutPage() {
     <main>
       <SiteHeader />
       <section className="story-hero about-story-hero">
-        <img className="story-hero-image" src="/images/hero-birria.png" alt="Birria tacos med consommé och pink pickles" />
+        <img className="story-hero-image" src="/images/hero-birria.webp" alt="Birria tacos med consommé och pink pickles" />
         <div className="story-hero-veil" />
         <div className="story-hero-content section-pad">
           <div className="story-hero-copy">
@@ -72,7 +72,7 @@ export default function AboutPage() {
 
       <section className="city-story section-pad">
         <div className="city-story-image">
-          <img src="/images/hero-birria.png" alt="Birria tacos med ost, hetta och pink pickles" />
+          <img src="/images/hero-birria.webp" alt="Birria tacos med ost, hetta och pink pickles" />
         </div>
         <div className="city-story-copy">
           <p className="section-kicker">STORSTADSINSPIRATION</p>

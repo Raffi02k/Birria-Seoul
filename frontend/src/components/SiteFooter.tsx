@@ -64,7 +64,7 @@ export function SiteFooter() {
           aria-label="Byggd av MediaMagnet"
         >
           <span>Byggd av</span>
-          <img src="/images/mediamagnet_logo_with_text_vit.png" alt="MediaMagnet" />
+          <img src="/images/mediamagnet_logo_with_text_vit.webp" alt="MediaMagnet" />
         </a>
         <span>Priser och tillgänglighet kan ändras.</span>
       </div>

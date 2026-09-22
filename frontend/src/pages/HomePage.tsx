@@ -13,7 +13,7 @@ export default function HomePage() {
       <section className="hero">
         <img
           className="hero-image fill-image"
-          src="/images/hero-birria.png"
+          src="/images/hero-birria.webp"
           alt="Krispiga birria-tacos som doppas i consommé"
         />
         <div className="hero-shade" />
@@ -47,7 +47,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="hero-sticker" aria-hidden="true">
-          <img src="/images/small_logo.PNG" alt="Birria Seoul logo" className="hero-sticker-img" />
+          <img src="/images/small_logo.webp" alt="Birria Seoul logo" className="hero-sticker-img" />
         </div>
         <p className="scroll-cue">
           Scrolla för cravings <ArrowDownRight size={16} />
@@ -116,7 +116,7 @@ export default function HomePage() {
         <div className="experience-image">
           <img
             className="fill-image"
-            src="/images/griddle-birria.png"
+            src="/images/griddle-birria.webp"
             alt="Birria-tacos som blir krispiga på stekbordet"
           />
           <div className="heat-badge">
@@ -179,7 +179,7 @@ export default function HomePage() {
           target="_blank"
           rel="noreferrer"
         >
-          <img className="fill-image" src="/images/menu-birria.png" alt="Senaste maten från Birria Seoul" />
+          <img className="fill-image" src="/images/menu-birria.webp" alt="Senaste maten från Birria Seoul" />
           <div className="instagram-overlay" />
           <div className="instagram-top">
             <Camera size={22} /> @birriaseoul <ArrowUpRight size={20} />

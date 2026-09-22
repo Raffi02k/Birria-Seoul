@@ -80,7 +80,7 @@ export function SiteHeader() {
         onClick={handleBrandClick}
       >
         <img
-          src="/images/Loggo.png"
+          src="/images/Loggo.webp"
           alt="Birria Seoul"
           style={{ width: "120px", height: "60px", objectFit: "contain" }}
         />
@@ -133,7 +133,7 @@ export function SiteHeader() {
             <div className="mobile-wordmark">
               <AppLink href="/" onClick={closeMenu}>
                 <img
-                  src="/images/Loggo.png"
+                  src="/images/Loggo.webp"
                   alt="Birria Seoul"
                   style={{ width: "160px", height: "80px", objectFit: "contain" }}
                 />

@@ -2120,7 +2120,7 @@ img {
   padding: 40px 20px;
   background:
     linear-gradient(180deg, rgba(9, 9, 9, .76), rgba(9, 9, 9, .94)),
-    url('/images/hero-birria.png') center / cover no-repeat,
+    url('/images/hero-birria.webp') center / cover no-repeat,
     var(--ink);
   color: var(--paper);
 }

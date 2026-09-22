@@ -8,7 +8,7 @@ export default function ContactPage() {
     <main>
       <SiteHeader />
       <section className="story-hero contact-story-hero">
-        <img className="story-hero-image" src="/images/griddle-birria.png" alt="Birria Seoul på grillen" />
+        <img className="story-hero-image" src="/images/griddle-birria.webp" alt="Birria Seoul på grillen" />
         <div className="story-hero-veil" />
         <div className="story-hero-content section-pad">
           <div className="story-hero-copy">
